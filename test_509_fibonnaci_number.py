@@ -22,4 +22,4 @@ def test_example_4():
     s = Solution()
     n = 100
     output = 354224848179261915075
-    assert s.fib_dp(n) == output 
+    assert s.fib_better(n) == output 

@@ -14,3 +14,10 @@ class Solution:
         for i in range(2,n+1):
             dp.append(dp[i-1]+dp[i-2])
         return dp[n]
+
+    def fib_better(self, n:int) -> int:
+        pre = 1
+        prepre = 1
+        for _ in range(2,n):
+            pre, prepre = pre + prepre, pre
+        return pre
